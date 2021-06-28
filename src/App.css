@@ -6,4 +6,11 @@ div#user_form {
 form {
   display: flex;
   flex-direction: column;
+  width: 50vw;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
 }

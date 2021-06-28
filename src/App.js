@@ -7,6 +7,7 @@ import {useState} from "react"
 
 function App(props) {
 
+  // Initialize to local data
   let [data, setData] = useState([{}]);
 
   return (
