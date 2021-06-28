@@ -17,6 +17,19 @@ export default class Form extends Component {
 
         this.handleClick = this.handleClick.bind(this);
         this.handleChange = this.handleChange.bind(this);
+        this.clearForm = this.clearForm.bind(this);
+    }
+
+    clearForm(){
+        this.setState({
+            first_name: "",
+            last_name: "",
+            street: "",
+            suburb: "",
+            postcode: "",
+            country: "",
+            date: new Date().toDateString()
+        })
     }
 
     handleClick(e){
@@ -25,6 +38,7 @@ export default class Form extends Component {
         this.props.setData([
             ...this.props.data, this.state
         ]);
+        this.clearForm();
     }
 
     handleChange(e){
