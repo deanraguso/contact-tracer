@@ -4,7 +4,6 @@ export default class Form extends Component {
 
     constructor(props){
         super(props);
-
     }
 
     render() {
@@ -29,6 +28,7 @@ export default class Form extends Component {
                     <label>Country:{" "} 
                         <input type="text" name="country"/>
                     </label>
+                    <input type="submit"></input>
                 </form>
             </div>
         )
