@@ -3,6 +3,17 @@ div#user_form {
   justify-content: center;
 }
 
+div#Log{
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+th, td {
+  padding: 1%;
+  width: 100px;
+}
+
 form {
   display: flex;
   flex-direction: column;

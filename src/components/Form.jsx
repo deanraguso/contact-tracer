@@ -20,6 +20,10 @@ export default class Form extends Component {
 
     handleClick(e){
         e.preventDefault();
+
+        this.props.setData([
+            ...this.props.data, this.state
+        ]);
     }
 
     handleChange(e){
