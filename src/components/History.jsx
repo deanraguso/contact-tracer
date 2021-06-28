@@ -18,7 +18,6 @@ export default class History extends Component {
                         </tr>
 
                         {this.props.data.map(d => {
-                            console.log(d);
                             return (
                                 <tr key={`${d.first_name}${d.date}`}>
                                     <td>{d.first_name}</td>
