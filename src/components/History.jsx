@@ -14,17 +14,20 @@ export default class History extends Component {
                             <th>Suburb</th>
                             <th>Postcode</th>
                             <th>Country</th>
+                            <th>Date</th>
                         </tr>
 
                         {this.props.data.map(d => {
+                            console.log(d);
                             return (
-                                <tr>
+                                <tr key={`${d.first_name}${d.date}`}>
                                     <td>{d.first_name}</td>
                                     <td>{d.last_name}</td>
                                     <td>{d.street}</td>
                                     <td>{d.suburb}</td>
                                     <td>{d.postcode}</td>
                                     <td>{d.country}</td>
+                                    <td>{d.date}</td>
                                 </tr>
                             )
                         })}

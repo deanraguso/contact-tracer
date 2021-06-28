@@ -11,7 +11,8 @@ export default class Form extends Component {
             street: "",
             suburb: "",
             postcode: "",
-            country: ""
+            country: "",
+            date: new Date().toDateString()
         }
 
         this.handleClick = this.handleClick.bind(this);
